@@ -1,0 +1,25 @@
+.form_container{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: var(--paragraph-size);
+}
+
+.inputs input{
+    padding: 0.25rem 0;
+}
+
+.inputs input, .inputs textarea{
+    font-size: var(--paragraph-size);
+    color: rgb(var(--text-color));
+    background-color: rgb(var(--foreground-color));
+    border: 1px solid rgb(var(--border-color-rgb));
+    text-indent: 5px;
+}
