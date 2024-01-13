@@ -1,0 +1,14 @@
+.button {
+    font-size: var(--button-font-size);
+    color: var(--text-rgb);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(var(--border-color-rgb));
+    background-color: var(--foreground-rgb);
+}
+
+.button:hover {
+    background-color: rgb(var(--button-background-hover-rgb));
+    color: rgb(var(--button-text-hover-rgb));
+    cursor: pointer;
+}
