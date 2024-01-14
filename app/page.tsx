@@ -35,7 +35,7 @@ export default function Home() {
             <label htmlFor="">Donation Amount:</label>
             <input type="text" name="donation_amount" id="donation_amount" />
           </form>
-          <Button button_text='Donate Now' />
+          <Button button_text='Donate Now'/>
         </div>
       </div>
     </main>
