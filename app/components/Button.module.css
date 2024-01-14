@@ -5,6 +5,7 @@
     border-radius: var(--border-radius);
     border: 1px solid rgb(var(--border-color-rgb));
     background-color: var(--foreground-rgb);
+    text-decoration: none;
 }
 
 .button:hover {
