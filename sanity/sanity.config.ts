@@ -6,7 +6,7 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'fundraising site',
-
+  basePath: '/admin',
   projectId: 'mc1hk923',
   dataset: 'production',
 
