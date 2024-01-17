@@ -1,0 +1,7 @@
+.popup_container{
+    position: absolute;
+    padding: 1.5rem 8rem;
+    background-color: green;
+    top: 20px;
+    border-radius: var(--border-radius);
+}
