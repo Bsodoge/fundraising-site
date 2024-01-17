@@ -9,6 +9,11 @@ export default {
             title: 'Campaign Title'
         },
         {
+            name: 'goal',
+            type: 'number',
+            title: 'Campaign Goal'
+        },
+        {
             name: 'description',
             type: 'array',
             title: 'Campaign Description',
