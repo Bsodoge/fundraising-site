@@ -1,32 +1,40 @@
 .progress_bar {
-    position: relative;
-    width: var(--progress-bar-width);
-    height: var(--progress-bar-height);
-    background-color: rgb(var(--progress-bar-background-rgb));
-    border-radius: var(--border-radius);
-    border: 1px solid rgb(var(--progress-bar-border-rgb));
+  position: relative;
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  background-color: rgb(var(--progress-bar-background-rgb));
+  border-radius: var(--border-radius);
+  border: 1px solid rgb(var(--progress-bar-border-rgb));
+  font-size: var(--paragrah-size);
+}
+
+.progress_bar::before {
+  content: '';
+  position: absolute;
+  left: var(--progress-bar-position);
+  bottom: var(--progress-bar-position);
+  right: var(--progress-bar-position);
+  animation: transitionLoad 2s ease-in-out;
+  width: var(--progress-bar-progress-width);
+  min-width: 1rem;
+  max-width: calc(100% - 3rem);
+  border-radius: var(--border-radius);
+  background-color: rgb(var(--progress-bar-foreground-rgb));
+  padding: 1rem;
+}
+
+@keyframes transitionLoad {
+  0% {
+    width: 0%;
   }
-  
-  .progress_bar::before {
-    content: '';
-    position: absolute;
-    left: var(--progress-bar-position);
-    bottom: var(--progress-bar-position);
-    right: var(--progress-bar-position);
-    animation: transitionLoad 2s ease-in-out;
-    width: var(--progress-bar-progress-width);
-    min-width: 1rem;
-    max-width: calc(100% - 3rem);
-    border-radius: var(--border-radius);
-    background-color: rgb(var(--progress-bar-foreground-rgb));
-    padding: 1rem;
+
+  100% {
+    width: var(--progress-bar-progress-width)
   }
-  
-  @keyframes transitionLoad {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: var(--progress-bar-progress-width)
-    }
+}
+
+@media (max-width: 1266px) {
+  .progress_bar {
+    width: 100%;
   }
+}
