@@ -6,12 +6,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_API_KEY as string, {
 
 const endpointSecret = process.env.WEBHOOK_SECRET as string;
 
-export const config = {
-    api: {
-        bodyParser: false
-    }
-};
-
 export async function POST(req: Request) {
     try {
         if (req.method !== "POST") {
